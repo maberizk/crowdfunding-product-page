@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./Navbar";
+import Intro from "./Intro";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app">
+      <div className="heroImg"></div>
+      <Navbar />
+      <Intro />
+      $89,914 of $100,000 backed 5,007 total backers 56 days left About this
+      project The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+      platform that elevates your screen to a more comfortable viewing height.
+      Placing your monitor at eye level has the potential to improve your
+      posture and make you more comfortable while at work, helping you stay
+      focused on the task at hand. Featuring artisan craftsmanship, the
+      simplicity of design creates extra desk space below your computer to allow
+      notepads, pens, and USB sticks to be stored under the stand. Bamboo Stand
+      Pledge $25 or more You get an ergonomic stand made of natural bamboo.
+      You've helped us launch our promotional campaign, and you’ll be added to a
+      special Backer member list. 101 left Select Reward Black Edition Stand
+      Pledge $75 or more You get a Black Special Edition computer stand and a
+      personal thank you. You’ll be added to our Backer member list. Shipping is
+      included. 64 left Select Reward Mahogany Special Edition Pledge $200 or
+      more You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+      personal thank you. You’ll be added to our Backer member list. Shipping is
+      included. 0 left Out of Stock
+      {/* <!-- Selection modal start --> */}
+      Back this project Want to support us in bringing Mastercraft Bamboo
+      Monitor Riser out in the world? Pledge with no reward Choose to support us
+      without a reward if you simply believe in our project. As a backer, you
+      will be signed up to receive product updates via email. Bamboo Stand
+      Pledge $25 or more You get an ergonomic stand made of natural bamboo.
+      You've helped us launch our promotional campaign, and you’ll be added to a
+      special Backer member list. 101 left
+      {/* <!-- Selected pledge start --> */}
+      Enter your pledge $25 Continue
+      {/* <!-- Selected pledge end --> */}
+      Black Edition Stand Pledge $75 or more You get a Black Special Edition
+      computer stand and a personal thank you. You’ll be added to our Backer
+      member list. Shipping is included. 64 left
+      {/* <!-- Selected pledge start --> */}
+      Enter your pledge $75 Continue
+      {/* <!-- Selected pledge end --> */}
+      Mahogany Special Edition Pledge $200 or more You get two Special Edition
+      Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be
+      added to our Backer member list. Shipping is included. 0 left
+      {/* <!-- Selected pledge  start --> */}
+      Enter your pledge $200 Continue
+      {/* <!-- Selected pledge end --> */}
+      {/* <!-- Selection modal end --> */}
+      {/* <!-- Success modal start --> */}
+      Thanks for your support! Your pledge brings us one step closer to sharing
+      Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our
+      campaign is completed. Got it!
+      {/* <!-- Success modal end --> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
