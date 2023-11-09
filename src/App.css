@@ -6,6 +6,9 @@
   font-family: "Commissioner", sans-serif;
 }
 
+#root {
+  background-color: rgb(247, 247, 247);
+}
 .app {
   height: 100vh;
   width: 100vw;
@@ -50,8 +53,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 20%;
-  padding: 0 5%;
+  margin: 0 25%;
+  padding: 0 3% 3% 3%;
   border-radius: 10px;
   position: relative;
   top: -90px;
@@ -60,4 +63,76 @@
 .masterCLogo {
   position: relative;
   top: -30px;
+}
+
+.title {
+  padding-bottom: 2%;
+  font-size: 1.8rem;
+}
+
+p {
+  color: hsl(0, 0%, 48%);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.BackProjectBtn {
+  background-color: hsl(176, 50%, 47%);
+  border: none;
+  padding: 2% 5%;
+  color: white;
+  border-radius: 40px;
+}
+
+.bookmarkToggle {
+  background-color: rgb(247, 247, 247);
+  border: none;
+  padding: 2% 5%;
+  color: hsl(0, 0%, 48%);
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+.backingDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: white;
+  align-items: center;
+}
+
+.middle {
+  border-right: 1px solid hsl(0, 0%, 48%, 40%);
+  border-left: 1px solid hsl(0, 0%, 48%, 40%);
+  padding: 0 10%;
+  margin: 0 10%;
+}
+
+.backingDetailsAll {
+  background-color: white;
+  margin: 0 25%;
+  padding: 3%;
+  border-radius: 10px;
+  margin-top: -60px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.progress {
+  background-color: hsl(176, 50%, 47%);
+  width: 60%;
+  height: 10px;
+  border-radius: 10px;
 }

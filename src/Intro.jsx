@@ -3,10 +3,15 @@ import React from "react";
 const Intro = () => {
   return (
     <div className="introBox">
-      <svg width="56" height="56" className="masterCLogo" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fill-rule="evenodd">
+      <svg
+        width="56"
+        height="56"
+        className="masterCLogo"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="none" fillRule="evenodd">
           <circle fill="#000" cx="28" cy="28" r="28" />
-          <g fill-rule="nonzero">
+          <g fillRule="nonzero">
             <path
               d="M15.565 28.565a1.93 1.93 0 012.606-.113l.122.113 10.142 10.142a1.93 1.93 0 01-2.606 2.84l-.122-.112-10.142-10.142a1.93 1.93 0 010-2.728z"
               fill="#444"
@@ -18,13 +23,13 @@ const Intro = () => {
           </g>
         </g>
       </svg>
-      <h1>Mastercraft Bamboo Monitor Riser</h1>
+      <h1 className="title">Mastercraft Bamboo Monitor Riser</h1>
       <p>
         A beautiful & handcrafted monitor stand to reduce neck and eye strain.{" "}
       </p>{" "}
-      <div>
-        <button>Back this project</button>
-        <button>Bookmark</button>
+      <div className="buttonContainer">
+        <button className="BackProjectBtn">Back this project</button>
+        <button className="bookmarkToggle">Bookmark</button>
       </div>
     </div>
   );
