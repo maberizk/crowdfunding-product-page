@@ -13,20 +13,20 @@ const Modal = () => {
           the world?
         </p>
       </div>
-      <div>
-        <div>
-          <input type="checkbox"></input>
+      <div className="donationOptions">
+        <div className="pledgeNo">
+          <input type="radio" className="radioBtn"></input>
           <h4>Pledge with no reward</h4>
         </div>
-        <p>
+        <p className="description">
           Choose to support us without a reward if you simply believe in our
           project. As a backer, you will be signed up to receive product updates
           via email.
         </p>
       </div>
-      <div>
+      <div className="donationOptions">
         <div>
-          <input type="checkbox"></input>
+          <input type="radio"></input>
           <h4>Bamboo Stand</h4>
           <p>Pledge $25 or more</p>
         </div>
@@ -44,9 +44,9 @@ const Modal = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <input type="checkbox"></input>
+      <div className="donationOptions">
+        <div className="donationHeader">
+          <input type="radio"></input>
           <h4>Black Edition Stand</h4>
           <p>Pledge $75 or more</p>
         </div>
@@ -63,9 +63,9 @@ const Modal = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="donationOptions soldOut">
         <div>
-          <input type="checkbox"></input>
+          <input type="radio"></input>
           <h4>Mahogany Special Edition Stand</h4>
           <p>Pledge $200 or more</p>
         </div>
