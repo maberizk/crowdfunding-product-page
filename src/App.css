@@ -110,8 +110,8 @@ p {
 }
 
 .bookmarked {
-  color: hsl(176, 50%, 47%);
-  fill: hsl(176, 50%, 47%);
+  color: hsl(176, 72%, 28%);
+  fill: hsl(176, 72%, 28%);
 }
 
 .bookmarkedFill {
@@ -206,4 +206,38 @@ p {
 
 .numberPadding {
   padding-right: 10%;
+}
+
+.BackProjectBtn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.soldOut {
+  opacity: 50%;
+}
+
+.soldOutBtn {
+  background-color: hsl(0, 0%, 48%, 40%);
+}
+
+.modal {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25%;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.modalHeader > h3 {
+  margin-bottom: 5%;
 }

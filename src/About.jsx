@@ -50,7 +50,7 @@ const About = () => {
           <button className="BackProjectBtn">Select Reward</button>
         </div>
       </div>
-      <div className="donationOptions">
+      <div className="donationOptions soldOut">
         <div className="donationHeader">
           <h3>Mahogany Special Edition</h3>
           <button className="pledgeBtn">Pledge $200 or more</button>
@@ -65,7 +65,7 @@ const About = () => {
             <h1 className="numberPadding">0</h1>
             <p>left</p>
           </div>
-          <button className="BackProjectBtn">Out of Stock</button>
+          <button className="BackProjectBtn soldOutBtn">Out of Stock</button>
         </div>
       </div>
     </div>

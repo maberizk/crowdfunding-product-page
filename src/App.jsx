@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Intro from "./Intro";
 import BackingDetails from "./BackingDetails";
 import About from "./About";
+import Modal from "./Modal";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Intro />
       <BackingDetails />
       <About />
+      <Modal />
     </div>
   );
 }
