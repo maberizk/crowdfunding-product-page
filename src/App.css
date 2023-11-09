@@ -6,14 +6,16 @@
   font-family: "Commissioner", sans-serif;
 }
 
-#root {
+html,
+body {
+  min-height: 100vh;
   background-color: rgb(247, 247, 247);
 }
+
 .app {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-color: rgb(247, 247, 247);
 }
 
 .heroImg {
@@ -135,4 +137,56 @@ p {
   width: 60%;
   height: 10px;
   border-radius: 10px;
+}
+
+.AboutSection {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  align-items: start;
+  margin: 3% 25%;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.aboutTitle {
+  padding-bottom: 5%;
+}
+
+.donationOptions {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(0, 0%, 48%, 40%);
+  padding: 5%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.donationHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pledgeBtn {
+  border: none;
+  background-color: transparent;
+  color: hsl(176, 50%, 47%);
+  margin-bottom: 5%;
+}
+
+.donationOptions > p {
+  line-height: 150%;
+  padding-bottom: 5%;
+}
+
+.quantityLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.numberPadding {
+  padding-right: 10%;
 }
