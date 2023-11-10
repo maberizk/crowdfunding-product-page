@@ -175,7 +175,7 @@ p {
   display: flex;
   flex-direction: column;
   border: 1px solid hsl(0, 0%, 48%, 40%);
-  padding: 5%;
+  padding: 5% 4%;
   border-radius: 10px;
   margin-top: 5%;
 }
@@ -245,7 +245,7 @@ p {
 .pledgeNo {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex;
 }
 
 h4 {
@@ -254,14 +254,15 @@ h4 {
 }
 
 .description {
-  margin-left: 5%;
+  margin-left: 7%;
+  font-size: 0.95rem;
 }
 
 .headerLeft {
   display: flex;
   flex-direction: row;
   width: 90%;
-  align-items: baseline;
+  align-items: flex;
 }
 
 .headerLeft > h4 {
@@ -281,4 +282,33 @@ h4 {
 .closeModalBtn {
   background-color: transparent;
   border: none;
+}
+/* input[type="radio"] {
+  accent-color: hsl(176, 50%, 47%);
+  padding: 6px;
+} */
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid hsl(0, 0%, 48%, 40%);
+
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: hsl(176, 50%, 47%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
