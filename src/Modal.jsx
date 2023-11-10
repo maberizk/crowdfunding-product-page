@@ -49,11 +49,12 @@ const Modal = () => {
           launch our promotional campaign, and you'll be added to a special
           Backer member list.
         </p>
-        <div>
+        <div className="line"></div>
+        <div className="pledge">
           <p>Enter your pledge</p>
-          <div>
-            <input type="text"></input>
-            <button>Continue</button>
+          <div className="input">
+            <input type="text" className="pledgeInput"></input>
+            <button className="continueBtn">Continue</button>
           </div>
         </div>
       </div>

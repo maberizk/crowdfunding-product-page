@@ -312,3 +312,44 @@ input[type="radio"]:checked {
   display: flex;
   align-items: center;
 }
+
+.pledge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pledgeInput {
+  box-sizing: border-box;
+  width: 85px;
+  border-radius: 50px;
+  height: 40px;
+  border: 1px solid hsl(0, 0%, 48%, 40%);
+  padding-left: 24px;
+}
+
+.input {
+  width: 200px;
+}
+
+.continueBtn {
+  box-sizing: border-box;
+  width: 90px;
+  border-radius: 50px;
+  height: 40px;
+  background-color: hsl(176, 50%, 47%);
+  border: none;
+  color: white;
+  font-family: 600;
+  margin-left: 24px;
+}
+
+.line {
+  border: 1px solid hsl(0, 0%, 48%, 40%);
+  margin-bottom: 5%;
+  width: calc(100% + 2.1 * 4%);
+  left: -4.4%;
+  position: relative;
+  opacity: 40%;
+}
