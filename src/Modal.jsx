@@ -6,7 +6,16 @@ const Modal = () => {
       <div>
         <div className="modalHeader">
           <h3>Back this project</h3>
-          <button>X</button>
+          <button className="closeModalBtn">
+            <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+                fill="#000"
+                fill-rule="evenodd"
+                opacity=".4"
+              />
+            </svg>
+          </button>
         </div>
         <p>
           Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
@@ -25,15 +34,19 @@ const Modal = () => {
         </p>
       </div>
       <div className="donationOptions">
-        <div>
-          <input type="radio"></input>
-          <h4>Bamboo Stand</h4>
-          <p>Pledge $25 or more</p>
+        <div className="donationHeader">
+          <div className="headerLeft">
+            <input type="radio"></input>
+            <h4>Bamboo Stand</h4>
+            <p className="cyanText">Pledge $25 or more</p>
+          </div>
+          <p>
+            <span className="boldedText">101</span> left
+          </p>
         </div>
-        <div>101 left</div>
-        <p>
+        <p className="description">
           You get an ergonomic stand made of natural bamboo. You've helped us
-          launch our promotional campaign, and you’ll be added to a special
+          launch our promotional campaign, and you'll be added to a special
           Backer member list.
         </p>
         <div>
@@ -46,12 +59,16 @@ const Modal = () => {
       </div>
       <div className="donationOptions">
         <div className="donationHeader">
-          <input type="radio"></input>
-          <h4>Black Edition Stand</h4>
-          <p>Pledge $75 or more</p>
+          <div className="headerLeft">
+            <input type="radio"></input>
+            <h4>Black Edition Stand</h4>
+            <p className="cyanText">Pledge $75 or more</p>
+          </div>
+          <p>
+            <span className="boldedText">64</span> left
+          </p>
         </div>
-        <div>64 left</div>
-        <p>
+        <p className="description">
           You get a Black Special Edition computer stand and a personal thank
           you. You'll be added to our Backer member list. Shipping is included.
         </p>
@@ -64,13 +81,17 @@ const Modal = () => {
         </div>
       </div>
       <div className="donationOptions soldOut">
-        <div>
-          <input type="radio"></input>
-          <h4>Mahogany Special Edition Stand</h4>
-          <p>Pledge $200 or more</p>
+        <div className="donationHeader">
+          <div className="headerLeft">
+            <input type="radio"></input>
+            <h4>Mahogany Special Edition Stand</h4>
+            <p className="cyanText">Pledge $200 or more</p>
+          </div>
+          <p>
+            <span className="boldedText">0</span> left
+          </p>
         </div>
-        <div>101 left</div>
-        <p>
+        <p className="description">
           You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
           personal thank you. You'll be added to our Backer member list.
           Shipping is included.

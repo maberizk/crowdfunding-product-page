@@ -256,3 +256,29 @@ h4 {
 .description {
   margin-left: 5%;
 }
+
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: baseline;
+}
+
+.headerLeft > h4 {
+  padding-right: 2%;
+}
+
+.cyanText {
+  color: hsl(176, 50%, 47%);
+}
+
+.boldedText {
+  font-weight: 600;
+  font-size: large;
+  color: black;
+}
+
+.closeModalBtn {
+  background-color: transparent;
+  border: none;
+}
