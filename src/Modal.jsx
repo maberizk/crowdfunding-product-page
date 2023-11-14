@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Modal = () => {
+const Modal = ({ closeModal }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const handleRadioClick = (pledge) => {
@@ -9,10 +9,10 @@ const Modal = () => {
 
   return (
     <div className="modal">
-      <div>
+      <div className="modal-content">
         <div className="modalHeader">
-          <h3>Back this project</h3>
-          <button className="closeModalBtn">
+          <h3 className="backHeader">Back this project</h3>
+          <button onClick={closeModal} className="closeModalBtn">
             <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
