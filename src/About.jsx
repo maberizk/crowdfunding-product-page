@@ -24,7 +24,7 @@ const About = () => {
           launch our promotional campaign, and you'll be added to a special
           Backer member list.
         </p>
-        <div className="donationHeader">
+        <div className="donationHeader padding">
           <div className="quantityLeft">
             <h1 className="numberPadding">101</h1>
             <p>left</p>
@@ -41,7 +41,7 @@ const About = () => {
           You get a Black Special Edition computer stand and a personal thank
           you. You'll be added to our Backer member list. Shipping is included.
         </p>
-        <div className="donationHeader">
+        <div className="donationHeader padding">
           <div className="quantityLeft">
             <h1 className="numberPadding">64</h1>
             <p>left</p>
@@ -60,7 +60,7 @@ const About = () => {
           personal thank you. You'll be added to our Backer member list.
           Shipping is included.
         </p>
-        <div className="donationHeader">
+        <div className="donationHeader padding">
           <div className="quantityLeft">
             <h1 className="numberPadding">0</h1>
             <p>left</p>

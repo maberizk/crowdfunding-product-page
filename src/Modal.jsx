@@ -3,8 +3,11 @@ import React, { useState } from "react";
 const Modal = ({ closeModal }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
+  const [selectedOption, setSelectedOption] = useState(null);
+
   const handleRadioClick = (pledge) => {
     setOpenDropdown(openDropdown === pledge ? null : pledge);
+    setSelectedOption(pledge);
   };
 
   return (
@@ -22,7 +25,6 @@ const Modal = ({ closeModal }) => {
               <path
                 d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
                 fill-rule="evenodd"
-                // opacity=".4"
               />
             </svg>
           </button>
@@ -32,7 +34,11 @@ const Modal = ({ closeModal }) => {
           the world?
         </p>
       </div>
-      <div className="donationOptions">
+      <div
+        className={`donationOptions ${
+          selectedOption === "no pledge" ? "selected" : ""
+        }`}
+      >
         <div className="pledgeNo">
           <input
             type="radio"
@@ -48,7 +54,11 @@ const Modal = ({ closeModal }) => {
           via email.
         </p>
       </div>
-      <div className="donationOptions">
+      <div
+        className={`donationOptions ${
+          selectedOption === "Bamboo Stand" ? "selected" : ""
+        }`}
+      >
         <div className="donationHeader">
           <div className="headerLeft">
             <input
@@ -87,7 +97,11 @@ const Modal = ({ closeModal }) => {
           </div>
         </div>
       </div>
-      <div className="donationOptions">
+      <div
+        className={`donationOptions ${
+          selectedOption === "Black Edition Stand" ? "selected" : ""
+        }`}
+      >
         <div className="donationHeader">
           <div className="headerLeft">
             <input

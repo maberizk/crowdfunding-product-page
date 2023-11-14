@@ -179,10 +179,18 @@ p {
   margin-top: 4%;
 }
 
+.donationOptions.selected {
+  outline: 2px solid hsl(176, 50%, 47%);
+}
+
 .donationHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.padding {
+  padding-top: 4%;
 }
 
 .pledgeBtn {
@@ -281,7 +289,7 @@ h4 {
 }
 
 .description {
-  margin-left: 7%;
+  margin-left: 6.5%;
   font-size: 0.95rem;
 }
 
@@ -294,6 +302,14 @@ h4 {
 
 .headerLeft > h4 {
   padding-right: 2%;
+}
+
+.headerLeft > h4:hover {
+  color: hsl(176, 50%, 47%);
+}
+
+.pledgeNo > h4:hover {
+  color: hsl(176, 50%, 47%);
 }
 
 .cyanText {
@@ -318,7 +334,6 @@ h4 {
 .closeModalBtn:hover .closeIcon {
   fill: black;
 }
-
 
 input[type="radio"] {
   /* remove standard background appearance */
@@ -393,7 +408,7 @@ input[type="radio"]:checked {
 }
 
 .pledgeDropdown.open {
-  max-height: 500px; /* adjust as needed */
+  max-height: 500px;
 }
 
 /* @media screen and (min-width: 1440px) {
