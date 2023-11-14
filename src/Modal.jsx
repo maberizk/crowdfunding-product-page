@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Modal = () => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const handleRadioClick = (pledge) => {
+    setOpenDropdown(openDropdown === pledge ? null : pledge);
+  };
+
   return (
     <div className="modal">
       <div>
@@ -24,7 +30,12 @@ const Modal = () => {
       </div>
       <div className="donationOptions">
         <div className="pledgeNo">
-          <input type="radio" className="radioBtn"></input>
+          <input
+            type="radio"
+            className="radioBtn"
+            name="pledge"
+            onClick={() => handleRadioClick("no pledge")}
+          ></input>
           <h4>Pledge with no reward</h4>
         </div>
         <p className="description">
@@ -36,7 +47,11 @@ const Modal = () => {
       <div className="donationOptions">
         <div className="donationHeader">
           <div className="headerLeft">
-            <input type="radio"></input>
+            <input
+              type="radio"
+              onClick={() => handleRadioClick("Bamboo Stand")}
+              name="pledge"
+            ></input>
             <h4>Bamboo Stand</h4>
             <p className="cyanText">Pledge $25 or more</p>
           </div>
@@ -49,19 +64,33 @@ const Modal = () => {
           launch our promotional campaign, and you'll be added to a special
           Backer member list.
         </p>
-        <div className="line"></div>
-        <div className="pledge">
-          <p>Enter your pledge</p>
-          <div className="input">
-            <input type="text" className="pledgeInput"></input>
-            <button className="continueBtn">Continue</button>
+        <div
+          className={`pledgeDropdown ${
+            openDropdown === "Bamboo Stand" ? "open" : ""
+          }`}
+        >
+          <div className="line"></div>
+          <div className="pledge">
+            <p>Enter your pledge</p>
+            <div className="input">
+              <input
+                type="text"
+                placeholder="$25"
+                className="pledgeInput"
+              ></input>
+              <button className="continueBtn">Continue</button>
+            </div>
           </div>
         </div>
       </div>
       <div className="donationOptions">
         <div className="donationHeader">
           <div className="headerLeft">
-            <input type="radio"></input>
+            <input
+              type="radio"
+              name="pledge"
+              onClick={() => handleRadioClick("Black Edition Stand")}
+            ></input>
             <h4>Black Edition Stand</h4>
             <p className="cyanText">Pledge $75 or more</p>
           </div>
@@ -73,18 +102,29 @@ const Modal = () => {
           You get a Black Special Edition computer stand and a personal thank
           you. You'll be added to our Backer member list. Shipping is included.
         </p>
-        <div>
-          <p>Enter your pledge</p>
-          <div>
-            <input type="text"></input>
-            <button>Continue</button>
+        <div
+          className={`pledgeDropdown ${
+            openDropdown === "Black Edition Stand" ? "open" : ""
+          }`}
+        >
+          <div className="line"></div>
+          <div className="pledge">
+            <p>Enter your pledge</p>
+            <div className="input">
+              <input
+                type="text"
+                placeholder="$75"
+                className="pledgeInput"
+              ></input>
+              <button className="continueBtn">Continue</button>
+            </div>
           </div>
         </div>
       </div>
       <div className="donationOptions soldOut">
         <div className="donationHeader">
           <div className="headerLeft">
-            <input type="radio"></input>
+            <input type="radio" name="pledge" disabled></input>
             <h4>Mahogany Special Edition Stand</h4>
             <p className="cyanText">Pledge $200 or more</p>
           </div>
