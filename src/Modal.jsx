@@ -53,6 +53,26 @@ const Modal = ({ closeModal, handleContinue }) => {
           project. As a backer, you will be signed up to receive product updates
           via email.
         </p>
+        <div
+          className={`pledgeDropdown ${
+            openDropdown === "no pledge" ? "open" : ""
+          }`}
+        >
+          <div className="line"></div>
+          <div className="pledge no">
+            {/* <p>Enter your pledge</p> */}
+            {/* <div className="input">
+              <input
+                type="text"
+                placeholder="$25"
+                className="pledgeInput"
+              ></input>
+            </div> */}
+            <button onClick={handleContinue} className="continueBtn">
+              Continue
+            </button>
+          </div>
+        </div>
       </div>
       <div
         className={`donationOptions ${
