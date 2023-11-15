@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 
-const Intro = () => {
+const Intro = ({ isModalOpen, handleBackProject, closeModal }) => {
   const [isBookmarked, setBookmarked] = useState(false);
-  const [isModalOpen, setModalOpen] = useState(false);
 
   const handleBookmark = () => {
     setBookmarked(!isBookmarked);
-  };
-
-  const handleBackProject = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
   };
 
   return (
@@ -76,7 +67,7 @@ const Intro = () => {
                 />
               </g>
             </svg>
-            Bookmark
+            {isBookmarked ? "Bookmarked" : "Bookmark"}
           </button>
         </div>
       </div>

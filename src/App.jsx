@@ -7,14 +7,31 @@ import About from "./About";
 import Modal from "./Modal";
 
 function App() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleBackProject = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <div className="app">
       <div className="overlay"></div>
       <div className="heroImg"></div>
       <Navbar />
-      <Intro />
+      <Intro
+        handleBackProject={handleBackProject}
+        closeModal={closeModal}
+        isModalOpen={isModalOpen}
+      />
       <BackingDetails />
-      <About />
+      <About
+        handleBackProject={handleBackProject}
+        closeModal={closeModal}
+        isModalOpen={isModalOpen}
+      />
     </div>
   );
 }
