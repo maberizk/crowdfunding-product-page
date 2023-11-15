@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Modal = ({ closeModal }) => {
+const Modal = ({ closeModal, handleContinue }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -24,7 +24,7 @@ const Modal = ({ closeModal }) => {
             >
               <path
                 d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
             </svg>
           </button>
@@ -92,7 +92,9 @@ const Modal = ({ closeModal }) => {
                 placeholder="$25"
                 className="pledgeInput"
               ></input>
-              <button className="continueBtn">Continue</button>
+              <button onClick={handleContinue} className="continueBtn">
+                Continue
+              </button>
             </div>
           </div>
         </div>
@@ -134,7 +136,9 @@ const Modal = ({ closeModal }) => {
                 placeholder="$75"
                 className="pledgeInput"
               ></input>
-              <button className="continueBtn">Continue</button>
+              <button className="continueBtn" onClick={handleContinue}>
+                Continue
+              </button>
             </div>
           </div>
         </div>

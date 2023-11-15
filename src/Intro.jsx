@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 
-const Intro = ({ isModalOpen, handleBackProject, closeModal }) => {
+const Intro = ({
+  isModalOpen,
+  handleBackProject,
+  closeModal,
+  handleContinue,
+}) => {
   const [isBookmarked, setBookmarked] = useState(false);
 
   const handleBookmark = () => {
@@ -11,7 +16,9 @@ const Intro = ({ isModalOpen, handleBackProject, closeModal }) => {
   return (
     <>
       <div className={`overlay ${isModalOpen ? "open" : ""}`}></div>
-      {isModalOpen && <Modal closeModal={closeModal} />}
+      {isModalOpen && (
+        <Modal closeModal={closeModal} handleContinue={handleContinue} />
+      )}
       <div className="introBox">
         <svg
           width="56"
@@ -52,7 +59,7 @@ const Intro = ({ isModalOpen, handleBackProject, closeModal }) => {
               height="56"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g fill="none" fill-rule="evenodd">
+              <g fill="none" fillRule="evenodd">
                 <circle
                   className={isBookmarked ? "bookmarked" : ""}
                   fill="#2F2F2F"

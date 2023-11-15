@@ -1,11 +1,18 @@
 import React from "react";
 import Modal from "./Modal";
 
-const About = ({ handleBackProject, closeModal, isModalOpen }) => {
+const About = ({
+  handleBackProject,
+  closeModal,
+  isModalOpen,
+  handleContinue,
+}) => {
   return (
     <>
       <div className={`overlay ${isModalOpen ? "open" : ""}`}></div>
-      {isModalOpen && <Modal closeModal={closeModal} />}
+      {isModalOpen && (
+        <Modal closeModal={closeModal} handleContinue={handleContinue} />
+      )}
       <div className="AboutSection">
         <h3 className="aboutTitle">About this project </h3>
         <p>

@@ -218,6 +218,9 @@ p {
   background-color: hsl(176, 72%, 28%);
 }
 
+.continueBtn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
 .soldOut {
   opacity: 50%;
 }
@@ -227,11 +230,12 @@ p {
 }
 
 .modal {
-  position: absolute;
-  top: 15%;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -50%);
   width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -409,6 +413,29 @@ input[type="radio"]:checked {
 
 .pledgeDropdown.open {
   max-height: 500px;
+}
+
+.successModal {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30%;
+  padding: 3%;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+}
+
+.successParagraph {
+  line-height: 160%;
+  text-align: center;
+  margin: 4% 0;
+}
+
+.paddingBottom {
+  padding-bottom: 6%;
 }
 
 /* @media screen and (min-width: 1440px) {
