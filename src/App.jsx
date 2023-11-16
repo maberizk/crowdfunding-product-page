@@ -21,7 +21,6 @@ function App() {
   });
 
   const handleDonation = (amount, item) => {
-    console.log(`Donating ${amount} to ${item}`);
     setTotalDonations((prevTotal) => prevTotal + amount);
     setTotalBackers((prevTotal) => prevTotal + 1);
     setItemQuantities((prevQuantities) => ({
