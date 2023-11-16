@@ -58,27 +58,28 @@ function App() {
       <div className="app">
         <div className="overlay"></div>
         <div className="heroImg"></div>
-        <Navbar />
-        <Intro
-          handleBackProject={handleBackProject}
-          closeModal={closeModal}
-          isModalOpen={isModalOpen}
-          handleContinue={handleContinue}
-          closeSuccessModal={closeSuccessModal}
-        />
-        <BackingDetails
-          totalDonations={totalDonations}
-          totalBackers={totalBackers}
-        />
-        <About
-          handleBackProject={handleBackProject}
-          closeModal={closeModal}
-          isModalOpen={isModalOpen}
-          handleContinue={handleContinue}
-          closeSuccessModal={closeSuccessModal}
-          handleDonation={handleDonation}
-          itemQuantities={itemQuantities}
-        />
+   
+          <Navbar />
+          <Intro
+            handleBackProject={handleBackProject}
+            closeModal={closeModal}
+            isModalOpen={isModalOpen}
+            handleContinue={handleContinue}
+            closeSuccessModal={closeSuccessModal}
+          />
+          <BackingDetails
+            totalDonations={totalDonations}
+            totalBackers={totalBackers}
+          />
+          <About
+            handleBackProject={handleBackProject}
+            closeModal={closeModal}
+            isModalOpen={isModalOpen}
+            handleContinue={handleContinue}
+            closeSuccessModal={closeSuccessModal}
+            handleDonation={handleDonation}
+            itemQuantities={itemQuantities}
+          />
       </div>
     </>
   );
