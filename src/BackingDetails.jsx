@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-const BackingDetails = () => {
+const BackingDetails = ({ totalBackers, totalDonations }) => {
+
   return (
     <div className="backingDetailsAll">
       <div className="backingDetails">
         <div>
-          <h1>$89,914</h1>
+          <h1>{totalDonations}</h1>
           <p>of $100,000 backed</p>
         </div>
         <div className="middle">
-          <h1>5,007</h1>
+          <h1>{totalBackers}</h1>
           <p>total backers</p>
         </div>
         <div>

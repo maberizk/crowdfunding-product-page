@@ -6,12 +6,19 @@ const About = ({
   closeModal,
   isModalOpen,
   handleContinue,
+  handleDonation,
+  itemQuantities,
 }) => {
   return (
     <>
       <div className={`overlay ${isModalOpen ? "open" : ""}`}></div>
       {isModalOpen && (
-        <Modal closeModal={closeModal} handleContinue={handleContinue} />
+        <Modal
+          closeModal={closeModal}
+          handleContinue={handleContinue}
+          handleDonation={handleDonation}
+          itemQuantities={itemQuantities}
+        />
       )}
       <div className="AboutSection">
         <h3 className="aboutTitle">About this project </h3>
@@ -37,7 +44,10 @@ const About = ({
           </p>
           <div className="donationHeader padding">
             <div className="quantityLeft">
-              <h1 className="numberPadding">101</h1>
+              <h1 className="numberPadding">
+                {" "}
+                {itemQuantities && itemQuantities["Bamboo Stand"]}
+              </h1>
               <p>left</p>
             </div>
             <button className="BackProjectBtn" onClick={handleBackProject}>
@@ -57,7 +67,10 @@ const About = ({
           </p>
           <div className="donationHeader padding">
             <div className="quantityLeft">
-              <h1 className="numberPadding">64</h1>
+              <h1 className="numberPadding">
+
+                {itemQuantities && itemQuantities["Black Edition Stand"]}
+              </h1>
               <p>left</p>
             </div>
 

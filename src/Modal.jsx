@@ -1,6 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
-const Modal = ({ closeModal, handleContinue }) => {
+const Modal = ({
+  closeModal,
+  handleContinue,
+  handleDonation,
+  itemQuantities,
+}) => {
+  const noPledgeInputRef = useRef();
+  const bambooStandInputRef = useRef();
+  const blackEditionStandInputRef = useRef();
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -59,18 +67,41 @@ const Modal = ({ closeModal, handleContinue }) => {
           }`}
         >
           <div className="line"></div>
-          <div className="pledge no">
-            {/* <p>Enter your pledge</p> */}
-            {/* <div className="input">
+          <div className="pledge">
+            <p>Enter your pledge</p>
+            <div className="input">
               <input
                 type="text"
                 placeholder="$25"
                 className="pledgeInput"
+                ref={noPledgeInputRef}
               ></input>
-            </div> */}
-            <button onClick={handleContinue} className="continueBtn">
-              Continue
-            </button>
+              <button
+                onClick={() => {
+                  let amount;
+                  switch (selectedOption) {
+                    case "no pledge":
+                      amount = parseInt(noPledgeInputRef.current.value);
+                      break;
+                    case "Bamboo Stand":
+                      amount = parseInt(bambooStandInputRef.current.value);
+                      break;
+                    case "Black Edition Stand":
+                      amount = parseInt(
+                        blackEditionStandInputRef.current.value
+                      );
+                      break;
+                    default:
+                      amount = 0;
+                  }
+                  handleDonation(amount, selectedOption);
+                  handleContinue();
+                }}
+                className="continueBtn"
+              >
+                Continue
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -90,7 +121,11 @@ const Modal = ({ closeModal, handleContinue }) => {
             <p className="cyanText">Pledge $25 or more</p>
           </div>
           <p>
-            <span className="boldedText">101</span> left
+            <span className="boldedText">
+              {itemQuantities && itemQuantities["Bamboo Stand"]}
+              <span> </span>
+            </span>
+            left
           </p>
         </div>
         <p className="description">
@@ -111,8 +146,31 @@ const Modal = ({ closeModal, handleContinue }) => {
                 type="text"
                 placeholder="$25"
                 className="pledgeInput"
+                ref={bambooStandInputRef}
               ></input>
-              <button onClick={handleContinue} className="continueBtn">
+              <button
+                onClick={() => {
+                  let amount;
+                  switch (selectedOption) {
+                    case "no pledge":
+                      amount = parseInt(noPledgeInputRef.current.value);
+                      break;
+                    case "Bamboo Stand":
+                      amount = parseInt(bambooStandInputRef.current.value);
+                      break;
+                    case "Black Edition Stand":
+                      amount = parseInt(
+                        blackEditionStandInputRef.current.value
+                      );
+                      break;
+                    default:
+                      amount = 0;
+                  }
+                  handleDonation(amount, selectedOption);
+                  handleContinue();
+                }}
+                className="continueBtn"
+              >
                 Continue
               </button>
             </div>
@@ -135,7 +193,11 @@ const Modal = ({ closeModal, handleContinue }) => {
             <p className="cyanText">Pledge $75 or more</p>
           </div>
           <p>
-            <span className="boldedText">64</span> left
+            <span className="boldedText">
+              {itemQuantities && itemQuantities["Black Edition Stand"]}
+            </span>
+            <span> </span>
+            left
           </p>
         </div>
         <p className="description">
@@ -155,8 +217,31 @@ const Modal = ({ closeModal, handleContinue }) => {
                 type="text"
                 placeholder="$75"
                 className="pledgeInput"
+                ref={blackEditionStandInputRef}
               ></input>
-              <button className="continueBtn" onClick={handleContinue}>
+              <button
+                onClick={() => {
+                  let amount;
+                  switch (selectedOption) {
+                    case "no pledge":
+                      amount = parseInt(noPledgeInputRef.current.value);
+                      break;
+                    case "Bamboo Stand":
+                      amount = parseInt(bambooStandInputRef.current.value);
+                      break;
+                    case "Black Edition Stand":
+                      amount = parseInt(
+                        blackEditionStandInputRef.current.value
+                      );
+                      break;
+                    default:
+                      amount = 0;
+                  }
+                  handleDonation(amount, selectedOption);
+                  handleContinue();
+                }}
+                className="continueBtn"
+              >
                 Continue
               </button>
             </div>

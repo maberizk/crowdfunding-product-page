@@ -12,6 +12,24 @@ function App() {
 
   const [isSuccessModalOpen, setSuccessModalOpen] = useState(false);
 
+  const [totalDonations, setTotalDonations] = useState(89914);
+  const [totalBackers, setTotalBackers] = useState(5007);
+  const [itemQuantities, setItemQuantities] = useState({
+    "Bamboo Stand": 101,
+    "Black Edition Stand": 64,
+    "Mahogany Special Edition Stand": 0,
+  });
+
+  const handleDonation = (amount, item) => {
+    console.log(`Donating ${amount} to ${item}`);
+    setTotalDonations((prevTotal) => prevTotal + amount);
+    setTotalBackers((prevTotal) => prevTotal + 1);
+    setItemQuantities((prevQuantities) => ({
+      ...prevQuantities,
+      [item]: prevQuantities[item] - 1,
+    }));
+  };
+
   const handleBackProject = () => {
     setModalOpen(true);
   };
@@ -21,13 +39,11 @@ function App() {
   };
 
   const handleContinue = () => {
-    console.log("continue clicked");
     setModalOpen(false);
     setSuccessModalOpen(true);
   };
 
   const closeSuccessModal = () => {
-    console.log("clicked close");
     setSuccessModalOpen(false);
   };
 
@@ -50,13 +66,18 @@ function App() {
           handleContinue={handleContinue}
           closeSuccessModal={closeSuccessModal}
         />
-        <BackingDetails />
+        <BackingDetails
+          totalDonations={totalDonations}
+          totalBackers={totalBackers}
+        />
         <About
           handleBackProject={handleBackProject}
           closeModal={closeModal}
           isModalOpen={isModalOpen}
           handleContinue={handleContinue}
-          closeSuccessModal={closeSuccessModal} 
+          closeSuccessModal={closeSuccessModal}
+          handleDonation={handleDonation}
+          itemQuantities={itemQuantities}
         />
       </div>
     </>

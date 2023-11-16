@@ -368,6 +368,7 @@ input[type="radio"]:checked {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 .pledgeInput {
@@ -377,10 +378,12 @@ input[type="radio"]:checked {
   height: 40px;
   border: 1px solid hsl(0, 0%, 48%, 40%);
   padding-left: 24px;
+  margin-bottom: 2px;
 }
 
 .input {
   width: 200px;
+  height: auto;
 }
 
 .continueBtn {
@@ -437,16 +440,6 @@ input[type="radio"]:checked {
   padding-bottom: 6%;
 }
 
-.no {
-  justify-content: flex-end;
+.pledgeInput:focus {
+  outline: 1px solid hsl(176, 50%, 47%);
 }
-
-/* @media screen and (min-width: 1440px) {
-  .app {
-    width: 1440px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-} */

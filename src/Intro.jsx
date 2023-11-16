@@ -6,6 +6,8 @@ const Intro = ({
   handleBackProject,
   closeModal,
   handleContinue,
+  handleDonation,
+  itemQuantities,
 }) => {
   const [isBookmarked, setBookmarked] = useState(false);
 
@@ -17,7 +19,12 @@ const Intro = ({
     <>
       <div className={`overlay ${isModalOpen ? "open" : ""}`}></div>
       {isModalOpen && (
-        <Modal closeModal={closeModal} handleContinue={handleContinue} />
+        <Modal
+          closeModal={closeModal}
+          handleContinue={handleContinue}
+          onDonate={handleDonation}
+          itemQuantities={itemQuantities}
+        />
       )}
       <div className="introBox">
         <svg
