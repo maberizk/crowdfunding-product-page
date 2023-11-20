@@ -641,6 +641,42 @@ input[type="radio"]:checked {
     padding: 7%;
     width: 65%;
   }
+
+  .modal {
+    width: 75%;
+    top: 20%;
+    left: -18%;
+    padding: 6%;
+  }
+
+  .backHeader {
+    font-size: 1.3rem;
+  }
+
+  .modalHeader {
+    align-items: center;
+  }
+
+  .modal-content > p {
+    font-size: 0.9rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 160%;
+  }
+
+  .description {
+    padding-top: 10%;
+    margin: 0;
+  }
+
+  .pledgeNo > h4 {
+    font-size: 0.9rem;
+    padding-left: 5%;
+  }
+
+  .headerLeft {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1440px) {
