@@ -81,7 +81,9 @@ const Intro = ({
                 />
               </g>
             </svg>
-            {isBookmarked ? "Bookmarked" : "Bookmark"}
+            <span className="bookmarkText">
+              {isBookmarked ? "Bookmarked" : "Bookmark"}
+            </span>
           </button>
         </div>
       </div>

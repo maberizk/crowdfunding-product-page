@@ -453,10 +453,6 @@ input[type="radio"]:checked {
     width: 100vw;
   }
 
-  /* .navBar a {
-    padding-left: 0;
-  } */
-
   .navLinks {
     display: flex;
     flex-direction: column;
@@ -505,6 +501,45 @@ input[type="radio"]:checked {
   }
   .menu-icon {
     visibility: visible;
+  }
+
+  .introBox {
+    margin: 0 6%;
+    padding: 0 8% 10% 8%;
+    align-items: center;
+  }
+
+  .introBox p {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 170%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  .bookmarkText {
+    display: none;
+  }
+
+  .bookmarkIcon {
+    margin: 0;
+  }
+
+  .buttonContainer {
+    padding-top: 10%;
+  }
+
+  .bookmarkToggle {
+    padding: 0 0 0 0;
+  }
+
+  .BackProjectBtn {
+    margin: 0 5% 0 0;
+    width: 80%;
   }
 }
 

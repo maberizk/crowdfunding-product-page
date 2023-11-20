@@ -47,7 +47,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <div className={`overlay ${isOpen ? "open" : ""}`}></div>;
+      <div className={`overlay ${isOpen ? "open" : ""}`}></div>
     </>
   );
 };
