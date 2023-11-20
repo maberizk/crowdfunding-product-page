@@ -50,7 +50,10 @@ const About = ({
               </h1>
               <p>left</p>
             </div>
-            <button className="BackProjectBtn" onClick={handleBackProject}>
+            <button
+              className="BackProjectBtn select"
+              onClick={handleBackProject}
+            >
               Select Reward
             </button>
           </div>
@@ -68,13 +71,15 @@ const About = ({
           <div className="donationHeader padding">
             <div className="quantityLeft">
               <h1 className="numberPadding">
-
                 {itemQuantities && itemQuantities["Black Edition Stand"]}
               </h1>
               <p>left</p>
             </div>
 
-            <button className="BackProjectBtn" onClick={handleBackProject}>
+            <button
+              className="BackProjectBtn select"
+              onClick={handleBackProject}
+            >
               Select Reward
             </button>
           </div>
@@ -94,7 +99,9 @@ const About = ({
               <h1 className="numberPadding">0</h1>
               <p>left</p>
             </div>
-            <button className="BackProjectBtn soldOutBtn">Out of Stock</button>
+            <button className="BackProjectBtn select soldOutBtn">
+              Out of Stock
+            </button>
           </div>
         </div>
       </div>

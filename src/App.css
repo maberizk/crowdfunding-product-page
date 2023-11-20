@@ -593,6 +593,54 @@ input[type="radio"]:checked {
     justify-content: center;
     align-items: center;
   }
+
+  .AboutSection {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 7% 6%;
+    padding: 5%;
+    width: 78%;
+    border-radius: 10px;
+  }
+
+  .AboutSection > p {
+    font-size: 0.9rem;
+    line-height: 160%;
+    padding-bottom: 10%;
+  }
+
+  .aboutTitle {
+    margin: 5% 0;
+  }
+  .donationHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .donationHeader > h3 {
+    font-size: 1rem;
+    padding-bottom: 5%;
+  }
+
+  .donationOptions > p {
+    font-size: 0.9rem;
+    padding-bottom: 5%;
+  }
+
+  .donationOptions {
+    padding: 8%;
+  }
+
+  .quantityLeft {
+    padding-bottom: 10%;
+  }
+
+  .select {
+    padding: 7%;
+    width: 65%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
