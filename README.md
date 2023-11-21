@@ -25,8 +25,10 @@ Your users should be able to:
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
 
-<h3>Completed Project<h3>
+## Completed Project<
+
 <!-- <p align="center"> -->
+
 Desktop
 <img src="/src/images/home_desktop.png">
 
@@ -34,7 +36,7 @@ Desktop
 
 <img src="/src/images/pledge_desktop.png">
 
-<img src="/src/images/success_desktop.png.png">
+<img src="/src/images/success_desktop.png">
 
 Mobile
 <br>
