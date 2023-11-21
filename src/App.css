@@ -685,14 +685,20 @@ input[type="radio"]:checked {
     margin: 0;
   }
 
+  .mobileDescription {
+    position: relative;
+    top: -30px;
+  }
+
   .pledgeNo > h4 {
     font-size: 0.9rem;
     padding-left: 5%;
   }
 
-  /* .headerLeft {
-    flex-direction: column;
-  } */
+  .headerLeft {
+    justify-content: left;
+    align-items: center;
+  }
 
   .quantityLeftModal {
     position: relative;
@@ -703,6 +709,10 @@ input[type="radio"]:checked {
   .donationDeets {
     display: flex;
     flex-direction: column;
+    padding-left: 5%;
+  }
+  .blackEdition {
+    top: 140px;
   }
 }
 
