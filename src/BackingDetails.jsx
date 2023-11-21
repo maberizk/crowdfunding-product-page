@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
 const BackingDetails = ({ totalBackers, totalDonations }) => {
+  let totalBackersComma = totalBackers.toLocaleString();
+  let totalDonationsFormatted = totalDonations.toLocaleString();
   return (
     <div className="backingDetailsAll">
       <div className="backingDetails">
         <div>
-          <h1>${totalDonations}</h1>
+          <h1>${totalDonationsFormatted}</h1>
           <p>of $100,000 backed</p>
         </div>
         <div className="middle">
-          <h1>{totalBackers}</h1>
+          <h1>{totalBackersComma}</h1>
           <p>total backers</p>
         </div>
         <div>

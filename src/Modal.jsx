@@ -73,7 +73,7 @@ const Modal = ({
               <input
                 type="text"
                 placeholder="$25"
-                className="pledgeInput"
+                className="pledgeInput padding"
                 ref={noPledgeInputRef}
               ></input>
               <button
@@ -147,7 +147,7 @@ const Modal = ({
               <input
                 type="text"
                 placeholder="$25"
-                className="pledgeInput"
+                className="pledgeInput padding"
                 ref={bambooStandInputRef}
               ></input>
               <button
@@ -220,7 +220,7 @@ const Modal = ({
               <input
                 type="text"
                 placeholder="$75"
-                className="pledgeInput"
+                className="pledgeInput padding"
                 ref={blackEditionStandInputRef}
               ></input>
               <button

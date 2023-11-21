@@ -378,6 +378,7 @@ input[type="radio"]:checked {
   height: 40px;
   border: 1px solid hsl(0, 0%, 48%, 40%);
   padding-left: 24px;
+  padding-bottom: 5%;
   margin-bottom: 2px;
 }
 
@@ -696,8 +697,13 @@ input[type="radio"]:checked {
   }
 
   .headerLeft {
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .headerLeft > div {
+    width: 100%;
   }
 
   .quantityLeftModal {
@@ -709,7 +715,16 @@ input[type="radio"]:checked {
   .donationDeets {
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    padding-left: 7%;
+    width: auto;
+  }
+
+  .donationDeets > p {
+    padding: 0;
+  }
+
+  .donationDeets > h4 {
+    margin: 0;
   }
   .blackEdition {
     top: 140px;
@@ -750,6 +765,14 @@ input[type="radio"]:checked {
 
   .continueBtn {
     margin: 0;
+  }
+
+  .padding {
+    margin-right: 15%;
+  }
+
+  .pledgeInput {
+    padding-bottom: 3%;
   }
 }
 
