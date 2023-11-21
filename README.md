@@ -26,7 +26,7 @@ Your users should be able to:
 - Toggle whether or not the product is bookmarked
 
 <h3>Completed Project<h3>
-<p align="center">
+<!-- <p align="center"> -->
 Desktop
 <img src="/src/images/home_desktop.png">
 
