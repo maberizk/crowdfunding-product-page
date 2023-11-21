@@ -1,6 +1,6 @@
 # Frontend Mentor - Crowdfunding product page
 
-![Design preview for the Crowdfunding product page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Crowdfunding product page coding challenge](./crowdfunding-product-page-main/design/desktop-design-modal-default.jpg)
 
 ## Welcome! 👋
 
@@ -39,6 +39,8 @@ Desktop
 Mobile
 <br>
 <img src="/src/images/home_mobile.png">
+<br>
 <img src="/src/images/about_mobile.png">
+<br>
 <img src="/src/images/pledge_mobile.png">
 <br>
