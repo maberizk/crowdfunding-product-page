@@ -731,6 +731,26 @@ input[type="radio"]:checked {
   .line {
     margin-top: 10%;
   }
+
+  .successModal {
+    width: 80%;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12% 5%;
+  }
+
+  .successModal > p {
+    font-size: 0.9rem;
+    padding: 5% 0;
+  }
+  .successModal > h2 {
+    font-size: 1.2rem;
+  }
+
+  .continueBtn {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
