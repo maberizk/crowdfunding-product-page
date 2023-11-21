@@ -448,6 +448,22 @@ input[type="radio"]:checked {
   visibility: hidden;
 }
 
+.quantityLeftModal {
+  position: relative;
+  top: -40px;
+  right: -600px;
+}
+
+.donationDeets {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.donationDeets > p {
+  padding-left: 5%;
+}
+
 @media screen and (max-width: 375px) {
   .app {
     width: 100vw;
@@ -630,7 +646,7 @@ input[type="radio"]:checked {
   }
 
   .donationOptions {
-    padding: 8%;
+    padding: 8% 6%;
   }
 
   .quantityLeft {
@@ -674,7 +690,18 @@ input[type="radio"]:checked {
     padding-left: 5%;
   }
 
-  .headerLeft {
+  /* .headerLeft {
+    flex-direction: column;
+  } */
+
+  .quantityLeftModal {
+    position: relative;
+    top: 160px;
+    right: 0;
+  }
+
+  .donationDeets {
+    display: flex;
     flex-direction: column;
   }
 }

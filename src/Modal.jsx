@@ -110,24 +110,26 @@ const Modal = ({
           selectedOption === "Bamboo Stand" ? "selected" : ""
         }`}
       >
-        <div className="donationHeader">
-          <div className="headerLeft">
-            <input
-              type="radio"
-              onClick={() => handleRadioClick("Bamboo Stand")}
-              name="pledge"
-            ></input>
+        {/* <div className="donationHeader"> */}
+        <div className="headerLeft">
+          <input
+            type="radio"
+            onClick={() => handleRadioClick("Bamboo Stand")}
+            name="pledge"
+          ></input>
+          <div className="donationDeets">
             <h4>Bamboo Stand</h4>
             <p className="cyanText">Pledge $25 or more</p>
           </div>
-          <p>
-            <span className="boldedText">
-              {itemQuantities && itemQuantities["Bamboo Stand"]}
-              <span> </span>
-            </span>
-            left
-          </p>
         </div>
+        <p className="quantityLeftModal">
+          <span className="boldedText">
+            {itemQuantities && itemQuantities["Bamboo Stand"]}
+            <span> </span>
+          </span>
+          left
+        </p>
+        {/* </div> */}
         <p className="description">
           You get an ergonomic stand made of natural bamboo. You've helped us
           launch our promotional campaign, and you'll be added to a special
@@ -182,24 +184,26 @@ const Modal = ({
           selectedOption === "Black Edition Stand" ? "selected" : ""
         }`}
       >
-        <div className="donationHeader">
-          <div className="headerLeft">
-            <input
-              type="radio"
-              name="pledge"
-              onClick={() => handleRadioClick("Black Edition Stand")}
-            ></input>
+        {/* <div className="donationHeader">  */}
+        <div className="headerLeft">
+          <input
+            type="radio"
+            name="pledge"
+            onClick={() => handleRadioClick("Black Edition Stand")}
+          ></input>
+          <div className="donationDeets">
             <h4>Black Edition Stand</h4>
             <p className="cyanText">Pledge $75 or more</p>
           </div>
-          <p>
-            <span className="boldedText">
-              {itemQuantities && itemQuantities["Black Edition Stand"]}
-            </span>
-            <span> </span>
-            left
-          </p>
         </div>
+        <p className="quantityLeftModal">
+          <span className="boldedText">
+            {itemQuantities && itemQuantities["Black Edition Stand"]}
+          </span>
+          <span> </span>
+          left
+        </p>
+        {/* </div> */}
         <p className="description">
           You get a Black Special Edition computer stand and a personal thank
           you. You'll be added to our Backer member list. Shipping is included.
@@ -249,16 +253,18 @@ const Modal = ({
         </div>
       </div>
       <div className="donationOptions soldOut">
-        <div className="donationHeader">
-          <div className="headerLeft">
-            <input type="radio" name="pledge" disabled></input>
+        {/* <div className="donationHeader"> */}
+        <div className="headerLeft">
+          <input type="radio" name="pledge" disabled></input>
+          <div className="donationDeets">
             <h4>Mahogany Special Edition Stand</h4>
             <p className="cyanText">Pledge $200 or more</p>
           </div>
-          <p>
-            <span className="boldedText">0</span> left
-          </p>
         </div>
+        <p className="quantityLeftModal">
+          <span className="boldedText">0</span> left
+        </p>
+        {/* </div> */}
         <p className="description">
           You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
           personal thank you. You'll be added to our Backer member list.
