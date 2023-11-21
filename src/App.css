@@ -714,6 +714,23 @@ input[type="radio"]:checked {
   .blackEdition {
     top: 140px;
   }
+
+  .input {
+    display: flex;
+  }
+
+  .pledge {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pledge > p {
+    padding-bottom: 10%;
+  }
+
+  .line {
+    margin-top: 10%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
