@@ -1,7 +1,5 @@
 # Frontend Mentor - Crowdfunding product page
 
-![Design preview for the Crowdfunding product page coding challenge](./crowdfunding-product-page-main/design/desktop-design-modal-default.jpg)
-
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
@@ -25,7 +23,7 @@ Your users should be able to:
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
 
-## Completed Project<
+## Completed Project
 
 <!-- <p align="center"> -->
 
